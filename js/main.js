@@ -24,14 +24,14 @@ let conclusion = confirm(message);
 let amountToBePaid;
 
 if (conclusion) {
-    let name = prompt('Enter your name');
+    let name = prompt('Enter your first name');
     let lastName = prompt('Enter your last name');
 
     const customer = new Customer(name, lastName, conclusion, products);
     amountToBePaid = customer.calculate();
 
     alert(`
-    Customer information:${name} ${lastName}
+    Customer information:${customer.getFirstName()} ${customer.getLastName()}
     Amount to be paid: ${amountToBePaid}
     `);
 } else {

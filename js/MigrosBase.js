@@ -14,7 +14,6 @@ class MigrosBase {
         if (this.checkYourProduct(this.products)) {
             //basket full
             if (this.isThereCard) {
-                
                 this.products.forEach((product) => {
                     amountToBePaid +=
                         (product.price * (100 - this.discountRate)) / 100;
@@ -35,5 +34,13 @@ class MigrosBase {
             return true;
         }
         return false;
+    }
+
+    getFirstName() {
+        return this.firstName;
+    }
+
+    getLastName() {
+        return this.lastName;
     }
 }

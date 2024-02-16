@@ -6,4 +6,12 @@ class Customer extends MigrosBase {
     calculate() {
         return super.calculate();
     }
+
+    getFirstName() {
+        return super.getFirstName();
+    }
+
+    getLastName() {
+        return super.getLastName();
+    }
 }
